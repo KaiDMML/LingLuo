@@ -14,9 +14,9 @@ import time
 # --------------------------------------------------------------------------
 def initBrowser():
     # @NOTE: Replace the path with your actual path to the chromedriver
-    executable_path = {'executable_path': '/Users/luoling/Downloads/geckodriver'}
+    #executable_path = {'executable_path': '/Users/luoling/Downloads/geckodriver'}
 
-    return Browser("firefox", **executable_path, headless=False)
+    return Browser("firefox", {'executable_path': '/Users/luoling/Downloads/geckodriver'}, headless=False)
     time.sleep(10)
 
 # --------------------------------------------------------------------------
